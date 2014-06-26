@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Hussein Aladeen</title>
+	<meta name="description" content="Hussein Aladeen personal site.">
+	<meta name="author" href="http://plus.google.com/+HusseinAladeen">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script>
+		$( document ).ready(function() {
+
+			handleHash();
+
+			$(".target").click(function(e) {
+				e.preventDefault();
+				window.location.hash =  $(this).attr("href");
+				handleHash();
+			});
+
+			$("#scrollTop").click(function() {
+				window.location.hash = "#t";
+				smoothScrollTo(0);
+			});
+
+			$(window).scroll(function() {
+		  		var scrollTop = $(window).scrollTop();
+		  		if ( scrollTop > 0 ) { 
+		    		$("#scrollTop").show(500);
+		  		} else {
+		  			$("#scrollTop").hide(500);
+		  		}
+			});
+		});
+
+		function handleHash() {
+			var hash = window.location.hash;
+			if(hash == "" || hash == "#t")
+				smoothScrollTo(0);
+			else	
+  				scrollToElement(hash+"a");
+		}
+
+		function scrollToElement(id){
+          	// Scroll
+        	smoothScrollTo($(id).offset().top);
+    	}
+
+    	function smoothScrollTo(top) {
+    		$('html,body').animate({
+            	scrollTop: top},
+            'slow');
+    	}
+
+	</script>
+</head>
+
+<body>
+	<div id="container">
+		<div id="left">
+			<h2>Hi.</h2>
+			<a href="index.html"><img src="images/me.jpg" width="100px" /></a>
+			<h2>I'm <a href="index.html">Hussein Aladeen</a>.</h2>
+			<hr>
+			<p>A computer science student who loves to take on new challenges and learn new stuff.</p>
+			<ul>
+				<li><a href="#about" class="target">About me</a></li>
+				<li><a href="#experience" class="target">Work Experience</a></li>
+				<li><a href="#projects" class="target">Projects</a></li>
+				<li><a href="#education" class="target">Education</a></li>
+				<li><a href="#skills" class="target">Skills</a></li>
+				<li><a href="#interest" class="target">Interest and Activities</a></li>
+			</ul>
+			<hr>
+			Follow me: 
+			<a href="http://github.com/husseinala"><i class="fa fa-github-square"></i></a>
+			<a href="http://twitter.com/hussein_ala"><i class="fa fa-twitter-square"></i></a>
+			<a href="http://plus.google.com/+HusseinAladeen"><i class="fa fa-google-plus-square"></i></a>
+			<a href="http://linkedin.com/profile/view?id=157563982"><i class="fa fa-linkedin-square"></i></a>
+		</div>
+		<div id="right">
+			<div id="abouta">
+			<h1><i class="fa fa-info-circle fa-6"></i> Who am I?</h1>
+			<p>
+				My name is Hussein Aladeen Hussein. I'm a Computer Science graduate. I enjoy making web and mobile apps. I'm also a big fan of wearable devices and everything technology related.
+			</p>
+			</div>
+			<hr>
+			<div id="experiencea">
+				<h1><i class="fa fa-briefcase"></i> Work Experience</h1>
+				<h4>Systems Administrator, Jan 2010 to April 2014 - Haniwells Properties Ltd</h4>
+				<p>I have had a part time job at Haniwells properties for 4 years. During which I had
+multiple responsibilities, these responsibilities included:</p>
+				<ul>
+				<li>To set up, manage and maintain IT resources such as websites, corporate email
+					addresses and property management systems.</li>
+				<li>To overlook the installation of, and to find new, special and general software
+applications, that can increase efficiency in the workplace.</li>
+				<li>To set up and maintain a secure over the internet video surveillance system for
+all the properties owned by the company.</li>
+				<li>To set up and maintain the satellite television system for all the properties.</li>
+				</ul>
+			</div>
+			<hr>
+			<div id="projectsa">
+				<h1><i class="fa fa-folder-open"></i> Projects</h1>
+				<img src="images/flimo.png" width="20px" style="float:left;margin-right:5px;"/>
+					
+				<h3>Flimo - Android App</h3>
+				<a href="http://husseinala.com/flimo">
+				(husseinala.com/flimo)
+				</a>
+				<p>
+					Flimo is Android app that I have published on the Android Play Store. The app is used to browse and watch videos from the popular video sharing website Vimeo. The app currently has a five star rating on the play store. During the development of the app I had to use different tools and techniques some of these included:
+
+					<ul>
+						<li>Planning, designing and implementing the app using advanced knowledge of software engineering and programming techniques, such as object oriented programming and design patterns.</li>
+						<li>Learning how to and using the Android SDK.</li>
+						<li>Using sophisticated integrated developer environments (IDEs), such as Eclipse and IntelliJ, and other software development tools.</li>
+						<li>Using the <a href="http://developer.vimeo.com/api">Vimeo REST APIs</a> for the retrival of data and OAuth 2 for the authentication of users.</li>
+						<li>Using open source third party frameworks and libraries, such as <a href="https://code.google.com/p/google-gson/">Gson</a> for JSON parsing.</li>
+						<li>Following the Android design guidelines to support multiple Android platforms and devices.</li>
+						<li>Using the Android logcat and unit testing to test the app.</li>
+					</ul>
+				</p>
+			</div>
+
+			<hr>
+
+			<div id="educationa">
+				<h1><i class="fa fa-graduation-cap"></i> Education</h1>
+				<p>
+					<h4>BSc(Hons) Computer Science, 2011 to 2014 - Manchester Metropolitan University</h4>
+					<p>Manchester, UK <br />
+					Graduate in July 2014</p>
+				</p>
+			</div>
+			<hr>
+			<div id="skillsa">
+				<h1><i class="fa fa-pencil"></i> Skills</h1>
+				<p>
+
+					<h4>Basic Knowledge</h4>
+					<ul>
+						<li>Adobe PhotoShop</li> 
+						<li>Adobe Illustrator</li> 
+						<li>Adobe Flash</li>
+						<li>iOS Development</li>
+					</ul>
+
+					<h4>Intermediate Knowledge</h4>
+					<ul>
+						<li>C++</li>
+						<li>Python</li>
+						<li>Ruby</li>
+						<li>PHP</li>
+						<li>XML</li>
+						<li>SQL</li>
+						<li>LaTeX</li>
+					</ul>
+
+					<h4>Advanced Knowledge</h4>
+					<ul>
+						<li>Java for Desktop Applications</li>
+						<li>Android Development</li>
+						<li>C#</li>
+						<li>JavaScript</li>
+						<li>HTML</li>
+						<li>CSS</li>
+					</ul>
+
+				</p>
+			</div>
+			<hr>
+			<div id="interesta">
+				<h1><i class="fa fa-gamepad"></i> Interest and Activities</h1>
+				<ul>
+					<li>Technology</li> 
+					<li>Open-Source Development</li>
+					<li>Cycling</li> 
+					<li>Swimming</li> 
+					<li>Football</li> 
+					<li>Travelling</li>
+				</ul>
+			</div>
+			<div id="scrollTop"><i class="fa fa-arrow-up"></i></div>
+		</div>
+	</div>
+
+</body>
+
+</html>
