@@ -71,7 +71,6 @@ li {
 	padding-top: 25px;
 	margin-left: 10px;
 	margin-right: 10px;
-	margin-bottom: 100px
 }
 
 #right h1 {
@@ -91,6 +90,14 @@ li {
 	color: #fff;
 	border-radius: 5px;
 	display: none;
+}
+
+#footer {
+	border-top: 1px solid #DDD;
+	text-align: center;
+	font-size: 14px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 .clearfix:after { 
