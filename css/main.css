@@ -79,17 +79,26 @@ li {
 
 #scrollTop {
 	position: fixed;
+	width:	55px;
+	height: 55px;
 	right: 10px;
 	bottom: 20px;
-	padding: 0px 5px;
 	background: #000;
 	opacity: 0.7;
 	cursor: pointer;
-	font-size: 46px;
 	text-align: center;
 	color: #fff;
 	border-radius: 5px;
 	display: none;
+}
+
+#scrollTop p{
+	margin: 0px;
+	font-weight: bold;
+}
+
+#scrollTop:hover {
+	background-color: #b31217;
 }
 
 #footer {
