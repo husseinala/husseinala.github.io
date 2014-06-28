@@ -49,9 +49,9 @@ li {
 	position: fixed;
 	float: left;
 	width: 220px;
-	padding-top: 25px;
+	padding-top: 0px;
 	margin-left: 10px;
-	margin-right: 10px;	
+	margin-right: 10px;
 }
 
 #left h2 {
@@ -68,7 +68,7 @@ li {
 	padding-left: 40px;
 	width: 640px;
 	min-height: 500px;
-	padding-top: 25px;
+	padding-top: 0px;
 	margin-left: 10px;
 	margin-right: 10px;
 }
@@ -96,8 +96,9 @@ li {
 	border-top: 1px solid #DDD;
 	text-align: center;
 	font-size: 14px;
+	padding-top: 20px;
 	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
 
 .clearfix:after { 
@@ -106,6 +107,11 @@ li {
    display: block; 
    height: 0; 
    clear: both;
+}
+
+.icon-at:before {
+  content: "@";
+  font-weight: bold;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 959px) {
