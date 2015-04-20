@@ -67,6 +67,12 @@ li {
 
 #content i {
 	font-size: 48px;
+	-webkit-transition: 0.25s all ease;
+	-moz-transition: 0.25s all ease;
+}
+
+#content i:hover {
+	transform: translateY(-5px);
 }
 
 #content .fueled {
