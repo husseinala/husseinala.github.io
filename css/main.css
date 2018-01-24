@@ -65,13 +65,12 @@ li {
 	margin: 0 auto;
 }
 
-#content i {
-	font-size: 48px;
+#content svg {
 	-webkit-transition: 0.25s all ease;
 	-moz-transition: 0.25s all ease;
 }
 
-#content i:hover {
+#content svg:hover {
 	transform: translateY(-5px);
 }
 
